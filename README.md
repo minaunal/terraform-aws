@@ -20,7 +20,7 @@ instance_type Defines the type of EC2 instance. t2.micro is a low-cost type that
 **user_data**: Specifies a script file to run when the EC2 instance is launched. Here, bootstrap.sh will be executed, typically used for initializing and configuring the instance (e.g., installing web servers).<br> 
 **tags**: Sets tags for the EC2 instance. In this case, it sets the "Name" tag to "static-web-instance."
 vpc_security_group_ids: Associates the EC2 instance with the specified security group. aws_security_group.web_sg.id refers to the ID of the security group defined in the aws_security_group resource.<br> 
-> resource "aws_security_group" "web_sg" {
+**> resource "aws_security_group" "web_sg" {
 >   name        = "web_sg"
 >   description = "Allow inbound HTTP traffic"
 > 
@@ -37,8 +37,9 @@ vpc_security_group_ids: Associates the EC2 instance with the specified security 
 >     protocol    = "-1"
 >     cidr_blocks = ["0.0.0.0/0"]
 >   }
-> }
-<br> 
+> } <br>
+**
+
 **name**: The name of the security group.<br> 
 **description**: A description of the security group.<br> 
 **ingress**: Allows inbound HTTP traffic. The from_port and to_port settings open port 80 for HTTP traffic, and cidr_blocks permits traffic from all IP addresses (0.0.0.0/0).<br> 
