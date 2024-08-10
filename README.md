@@ -42,7 +42,7 @@ vpc_security_group_ids: Associates the EC2 instance with the specified security 
 **description**: A description of the security group.<br> 
 **ingress**: Allows inbound HTTP traffic. The from_port and to_port settings open port 80 for HTTP traffic, and cidr_blocks permits traffic from all IP addresses (0.0.0.0/0).<br> 
 **egress**: Allows all outbound traffic. The from_port, to_port, and protocol settings allow all ports and protocols (-1), and cidr_blocks permits traffic to all IP addresses (0.0.0.0/0).<br> 
-Besides, we have to configure our ACCESS_KEY and SECRET_ACCESS_KEY by using $ aws configure command. This command is going to ask this variables to define them. <br>
+Besides, we have to configure our ACCESS_KEY and SECRET_ACCESS_KEY by using $ aws configure command. This command is going to ask this variables to define them. <br><br>
 After all that, we must initialize terraform, and then $ terraform apply command must be executed. 
 When we switched by AWS UI, in the EC2->Instances tab; this machine must properly seem in there.<br>
 ![Web Page Screenshot](screenshots/EC2.png)<br><br>
