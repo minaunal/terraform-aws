@@ -37,7 +37,7 @@ vpc_security_group_ids: Associates the EC2 instance with the specified security 
 >     protocol    = "-1"
 >     cidr_blocks = ["0.0.0.0/0"]
 >   }
-> } <br>
+> } 
 **name**: The name of the security group.<br> 
 **description**: A description of the security group.<br> 
 **ingress**: Allows inbound HTTP traffic. The from_port and to_port settings open port 80 for HTTP traffic, and cidr_blocks permits traffic from all IP addresses (0.0.0.0/0).<br> 
