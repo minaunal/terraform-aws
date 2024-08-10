@@ -14,7 +14,7 @@ Here is my main.tf file that keeps some info's about my EC2 instance. <br>
 > 
 >   vpc_security_group_ids = [aws_security_group.web_sg.id]
 > }**
-<br> 
+
 **ami**: Specifies the Amazon Machine Image (AMI) ID to be used for the EC2 instance. The given ami-023f7a277d992156c should be replaced with the latest and valid Ubuntu AMI ID for my region. I used us-east-1 for my app.<br> 
 instance_type Defines the type of EC2 instance. t2.micro is a low-cost type that may be eligible for the AWS Free Tier.<br> 
 **user_data**: Specifies a script file to run when the EC2 instance is launched. Here, bootstrap.sh will be executed, typically used for initializing and configuring the instance (e.g., installing web servers).<br> 
