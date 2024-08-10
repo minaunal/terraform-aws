@@ -1,4 +1,4 @@
-**This application creates a static web page from my own EC2 instance on AWS by using terraform.**<br>
+**This application creates a static web page from my own EC2 instance on AWS by using terraform.<br>**
 **Terraform is an orchestration tool for managing cloud instances like t2.micro.**<br>
 ![Web Page Screenshot](screenshots/aws.png)<br><br>
 Here is my main.tf file that keeps some info's about my EC2 instance. <br>  
